@@ -1,0 +1,90 @@
+.header {
+  position: absolute;
+  width: 100vw;
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    // top: 6.875rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background: linear-gradient(transparent, $dark-blue);
+  }
+
+  nav {
+    position: relative;
+    z-index: 1;
+    @include breakpoint-down(medium) {
+      padding: 2.625rem 0;
+    }
+    @include breakpoint-up(large) {
+      padding: 1.875rem 0;
+    }
+  }
+  &__logo {
+    img {
+      width: 5rem;
+      height: 3.4375rem;
+    }
+  }
+  &__toggle {
+    > span {
+      display: block;
+      background-color: $dark-blue;
+      width: 26px;
+      height: 2px;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__links {
+    a {
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+  &__button {
+    &:hover {
+      color: $white;
+    }
+  }
+  &__menu {
+    background: #fff;
+    padding: 1.625rem;
+    border-radius: 3px;
+    position: absolute;
+    margin: 0 auto;
+    @include breakpoint-down(medium) {
+      width: calc(100% - 2.5rem);
+    }
+    @include breakpoint-up(large) {
+      width: calc(100% - 15rem);
+    }
+    
+    > a {
+      display: block;
+      text-align: center;
+      padding: 0.625rem;
+    }
+  }
+}

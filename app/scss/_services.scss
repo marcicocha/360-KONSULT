@@ -1,0 +1,34 @@
+.service {
+  &__flex {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__heading {
+    font-weight: bold;
+    margin: 0;
+  }
+  &__image {
+    width: 100%;
+    @include breakpoint-down(medium) {
+      //   min-height: 21.1875rem;
+    }
+    @include breakpoint-up(large) {
+      //   min-height: 39rem;
+      width: 45%;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    @include breakpoint-up(large) {
+      //   min-height: 39rem;
+      width: 55%;
+    }
+  }
+}
