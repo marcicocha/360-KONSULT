@@ -50,8 +50,8 @@
         <a href="codegarage.html">Code garrage</a>
       </div>
     </header>
-    <section class="container">
-      <h1>About us</h1>
+    <section class="contact__intro container">
+      <h1>Contact Us</h1>
       <p>Got an idea but tech is not available? Reach out to us!!</p>
       <p>
         At 386Konsult, we give the tech to actualize your idea, giving your hope
@@ -61,37 +61,37 @@
     </section>
 
     <section class="container">
-      <div class="flex flex-jc-sb flex-ai-c">
-        <div>
+      <div class="contact__summary">
+        <div class="half-width">
           <div>
-            <h6>Phone Number</h6>
+            <p>Phone Number</p>
             <p>+234 8185 95 6620</p>
           </div>
           <div>
-            <h6>Email Address</h6>
+            <p>Email Address</p>
             <p>Services@konsult.com</p>
           </div>
           <div>
-            <h6>Local Address</h6>
+            <p>Local Address</p>
             <p>23, Herbert maculay, Yaba, Lagos</p>
           </div>
         </div>
-        <div>
-            <div>
-                <label>Name</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>Email Address</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>Your question</label>
-                <textarea type="text">
-            </div>
-            <div>
-                <button class="button">SUBMIT</button>
-            </div>
+        <div class="half-width">
+          <div class="full-input">
+            <label for="name">Name</label>
+            <input id="name" type="text" />
+          </div>
+          <div class="full-input">
+            <label for="email">Email Address</label>
+            <input id="email" type="text" />
+          </div>
+          <div class="full-input">
+            <label for="question">Your question</label>
+            <textarea id="question" rows="6"></textarea>
+          </div>
+          <div>
+            <button class="button">SUBMIT</button>
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,10 @@
 .feature {
   background: rgba(54, 149, 119, 0.03);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  h2 {
+    margin-top: 0 !important;
+  }
   &__logo {
     width: 100%;
     flex-wrap: wrap;
