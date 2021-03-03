@@ -371,6 +371,7 @@ h3 {
     z-index: -30;
     width: 100%;
     height: 100%;
+    opacity: 0.29;
   }
 }
 
@@ -411,6 +412,7 @@ h3 {
   z-index: -30;
   width: 100%;
   height: 100%;
+  opacity: 0.34;
 }
 
 @media (min-width: 64em) {
@@ -455,6 +457,7 @@ h3 {
   z-index: -30;
   width: 100%;
   height: 100%;
+  opacity: 0.29;
 }
 
 @media (min-width: 64em) {
@@ -499,6 +502,7 @@ h3 {
   z-index: -30;
   width: 100%;
   height: 100%;
+  opacity: 0.49;
 }
 
 @media (min-width: 64em) {
@@ -643,6 +647,7 @@ h3 {
   z-index: -30;
   width: 100%;
   height: 100%;
+  opacity: 0.49;
 }
 
 @media (min-width: 64em) {
@@ -1034,6 +1039,7 @@ footer div ul li {
   top: 4%;
   left: 0%;
   width: 2.8125rem;
+  opacity: 0.84;
 }
 
 @media (min-width: 64em) {
@@ -1061,7 +1067,7 @@ footer div ul li {
 
 .shapes__intro li:nth-child(4) {
   top: 9.18%;
-  right: 10%;
+  right: 7%;
   width: 1.5625rem;
 }
 
