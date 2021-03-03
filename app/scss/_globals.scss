@@ -137,3 +137,8 @@ h3 {
     margin-bottom: 0.9375rem;
   }
 }
+.image-padding {
+  @include breakpoint-up(large) {
+    padding: 5rem;
+  }
+}
