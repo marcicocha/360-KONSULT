@@ -1,0 +1,36 @@
+footer {
+  background: $dark-blue;
+  padding-top: 4.125rem !important;
+  padding-bottom: 4.125rem im !important;
+  color: $white;
+  flex-wrap: wrap;
+  width: 100%;
+  div {
+    &:not(:first-child) {
+      font-family: $open-sans;
+      p {
+        font-weight: 600;
+      }
+    }
+    @include breakpoint-down(medium) {
+      width: 100%;
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: 50%;
+      }
+    }
+    @include breakpoint-up(large) {
+      width: 30%;
+      &:not(:first-child) {
+        width: 20%;
+      }
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -128,6 +128,7 @@ a:hover {
 }
 
 .button {
+  display: inline-block;
   border-radius: 5px;
   background-color: #1f84de;
   color: #ffffff;
@@ -217,7 +218,7 @@ h3 {
 
 .header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 
 .header.open .header__toggle > span:first-child {
@@ -321,7 +322,6 @@ h3 {
   background: rgba(54, 149, 119, 0.05);
   padding-top: 8rem;
   padding-bottom: 3rem;
-  width: 100vw;
   margin-bottom: 1rem;
 }
 
@@ -508,6 +508,10 @@ h3 {
   padding-bottom: 1.625rem;
 }
 
+.codegarrage__intro {
+  margin-bottom: 3.5rem;
+}
+
 @media (min-width: 64em) {
   .codegarrage__intro {
     display: -webkit-box;
@@ -582,6 +586,11 @@ h3 {
 .codegarrage__feature p {
   color: #f3a712;
   font-weight: 600;
+  margin-bottom: 0;
+}
+
+.codegarrage__feature h2 {
+  margin-top: 0;
 }
 
 .codegarrage__feature__parent div {
@@ -644,5 +653,79 @@ h3 {
   background: rgba(54, 149, 119, 0.03);
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.feature__logo {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feature__logo div {
+  padding: 5px;
+}
+
+@media (max-width: 63.9375em) {
+  .feature__logo div {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__logo div {
+    width: 11%;
+  }
+}
+
+.feature__logo div img {
+  width: 100%;
+  height: 2.5rem;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+footer {
+  background: #141414;
+  padding-top: 4.125rem !important;
+  padding-bottom: 4.125rem im !important;
+  color: #ffffff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+footer div:not(:first-child) {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer div:not(:first-child) p {
+  font-weight: 600;
+}
+
+@media (max-width: 63.9375em) {
+  footer div {
+    width: 100%;
+  }
+  footer div:nth-child(2), footer div:nth-child(3) {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  footer div {
+    width: 30%;
+  }
+  footer div:not(:first-child) {
+    width: 20%;
+  }
+}
+
+footer div ul {
+  padding-left: 0;
+}
+
+footer div ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
