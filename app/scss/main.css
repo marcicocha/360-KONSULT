@@ -246,6 +246,12 @@ h3 {
   }
 }
 
+@media (min-width: 64em) {
+  .image-padding {
+    padding: 5rem;
+  }
+}
+
 .header {
   width: 100%;
 }
