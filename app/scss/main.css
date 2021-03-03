@@ -91,6 +91,7 @@ body {
   font-size: 1rem;
   color: #29335c;
   overflow-x: hidden;
+  background: rgba(229, 229, 229, 0.03);
 }
 
 body.noscroll {
@@ -227,29 +228,21 @@ h3 {
   position: absolute;
 }
 
-@media (max-width: 63.9375em) {
-  .p-tb {
-    padding-top: 0.9375rem;
-    padding-bottom: 0.9375rem;
-  }
+.p-tb {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
-@media (max-width: 63.9375em) {
-  .m-t {
-    margin-top: 0.9375rem;
-  }
+.m-t {
+  margin-top: 0.9375rem;
 }
 
-@media (max-width: 63.9375em) {
-  .m-b {
-    margin-bottom: 0.9375rem;
-  }
+.m-b {
+  margin-bottom: 0.9375rem;
 }
 
-@media (min-width: 64em) {
-  .image-padding {
-    padding: 5rem;
-  }
+.image-padding {
+  padding: 5rem;
 }
 
 .header {
@@ -280,6 +273,7 @@ h3 {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#141414));
   background: linear-gradient(transparent, #141414);
+  z-index: 2;
 }
 
 .header nav {
@@ -333,6 +327,7 @@ h3 {
   border-radius: 3px;
   position: absolute;
   margin: 0 auto;
+  z-index: 3;
 }
 
 @media (max-width: 63.9375em) {
@@ -973,10 +968,10 @@ footer div ul li {
             justify-content: space-between;
   }
   .contact__summary .half-width:first-child {
-    width: 70%;
+    width: 60%;
   }
   .contact__summary .half-width:last-child {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -1002,9 +997,32 @@ footer div ul li {
 
 .contact__summary .full-input input[type="text"],
 .contact__summary .full-input textarea {
-  -webkit-box-shadow: 0px 4px 17px 1px rgba(54, 149, 119, 0.04);
-          box-shadow: 0px 4px 17px 1px rgba(54, 149, 119, 0.04);
-  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid rgba(31, 132, 222, 0.3);
+  border-radius: 0.3125rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact__summary .full-input input[type="text"] {
+  height: 2.5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .contact__card {
+    margin-top: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .contact__card {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px, 4px rgba(54, 149, 119, 0.04);
+            box-shadow: 0px, 4px rgba(54, 149, 119, 0.04);
+  }
 }
 
 .shapes {
