@@ -90,6 +90,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #29335c;
+  overflow-x: hidden;
 }
 
 body.noscroll {
@@ -415,8 +416,8 @@ h3 {
 @media (min-width: 64em) {
   .intro__text::before {
     background-position: top right;
-    top: 0;
-    right: -25%;
+    top: -7%;
+    right: 9%;
   }
 }
 
@@ -479,6 +480,33 @@ h3 {
     min-height: 31.25rem;
     width: 31.25rem;
     background-position: center, center;
+  }
+}
+
+.about {
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  background-image: url("/images/shapes/line-orange-circle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 19.8125rem;
+  position: absolute;
+  bottom: -2%;
+  right: -15%;
+  z-index: -30;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 64em) {
+  .about::before {
+    background-position: bottom right;
+    background-size: 16rem;
+    bottom: 2%;
+    right: 10%;
   }
 }
 
@@ -599,6 +627,33 @@ h3 {
   width: 100%;
 }
 
+.service {
+  position: relative;
+}
+
+.service::before {
+  content: "";
+  background-image: url("/images/shapes/line-orange-circle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 19.8125rem;
+  position: absolute;
+  bottom: 33%;
+  left: -32%;
+  z-index: -30;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 64em) {
+  .service::before {
+    background-position: center left;
+    background-size: 19.8125rem;
+    top: 13%;
+    left: 31%;
+  }
+}
+
 @media (min-width: 64em) {
   .service__flex {
     display: -webkit-box;
@@ -610,6 +665,16 @@ h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .service__flex:last-child .service__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .service__flex:last-child .service__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -624,7 +689,7 @@ h3 {
 
 @media (min-width: 64em) {
   .service__image {
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -636,7 +701,7 @@ h3 {
 
 @media (min-width: 64em) {
   .service__text {
-    width: 55%;
+    width: 53%;
   }
 }
 
@@ -960,6 +1025,7 @@ footer div ul li {
 @media (min-width: 64em) {
   .shapes__intro li:first-child {
     top: 24.97%;
+    left: 10%;
   }
 }
 
@@ -979,6 +1045,7 @@ footer div ul li {
 }
 
 .shapes__intro li:nth-child(3) {
+  display: none;
   top: 74.24%;
   right: 4%;
   width: 2.125rem;
@@ -986,6 +1053,7 @@ footer div ul li {
 
 @media (min-width: 64em) {
   .shapes__intro li:nth-child(3) {
+    display: block;
     top: 50.24%;
     right: 10%;
   }
@@ -1001,5 +1069,229 @@ footer div ul li {
   .shapes__intro li:nth-child(4) {
     top: 27%;
   }
+}
+
+.shapes__about li:first-child {
+  display: none;
+  top: 73%;
+  right: 5%;
+  width: 2.125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__about li:first-child {
+    display: block;
+    top: 16%;
+  }
+}
+
+.shapes__about li:nth-child(2) {
+  top: 73%;
+  right: 5%;
+  width: 2.125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__about li:nth-child(2) {
+    top: 65%;
+  }
+}
+
+.shapes__about li:nth-child(3) {
+  top: 91%;
+  right: 20%;
+  width: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__about li:nth-child(3) {
+    bottom: 10%;
+    right: 25%;
+  }
+}
+
+.shapes__services li:first-child {
+  display: none;
+  top: 3%;
+  right: 5%;
+  width: 2.125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__services li:first-child {
+    display: block;
+    top: 24%;
+  }
+}
+
+.shapes__services li:nth-child(2) {
+  top: 40%;
+  right: -8%;
+  width: 2.125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__services li:nth-child(2) {
+    top: 40%;
+    right: 24%;
+  }
+}
+
+.shapes__services li:nth-child(3) {
+  display: none;
+  top: 50%;
+  left: 5%;
+  width: 2.125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__services li:nth-child(3) {
+    display: block;
+    top: 62%;
+    left: 11%;
+  }
+}
+
+.shapes__services li:last-child {
+  display: none;
+  top: 91%;
+  right: 20%;
+  width: 2.125rem;
+}
+
+@media (min-width: 64em) {
+  .shapes__services li:last-child {
+    display: block;
+    bottom: 10%;
+    left: 25%;
+  }
+}
+
+.shapes__contact li:first-child {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .shapes__contact li:first-child {
+    display: block;
+    top: 20%;
+  }
+}
+
+.shapes__contact li:last-child {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .shapes__contact li:last-child {
+    display: block;
+    top: 30%;
+    left: 20%;
+  }
+}
+
+.contact__summary {
+  position: relative;
+}
+
+.contact__summary::before {
+  content: "";
+  background-image: url("/images/shapes/line-blue-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 19.8125rem;
+  position: absolute;
+  top: 12%;
+  left: -64%;
+  z-index: -30;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+}
+
+@media (min-width: 64em) {
+  .contact__summary::before {
+    display: block;
+    background-position: top right;
+    top: -7%;
+    left: -10%;
+  }
+}
+
+@media (min-width: 64em) {
+  .contact__summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.contact__summary__heading {
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact__summary__image {
+  width: 100%;
+}
+
+@media (min-width: 64em) {
+  .contact__summary__image {
+    width: 45%;
+  }
+}
+
+.contact__summary__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 64em) {
+  .contact__summary__text {
+    width: 55%;
+  }
+}
+
+.contact__summary__text ul {
+  padding-left: 0;
+}
+
+.contact__summary__text ul li {
+  list-style-type: none;
+  position: relative;
+  margin: 1.875rem 0;
+}
+
+.contact__summary__text ul li span {
+  margin-left: 3.125rem;
+}
+
+.contact__summary__text ul li:first-child::before {
+  background-color: #369577;
+}
+
+.contact__summary__text ul li:nth-child(2)::before {
+  background-color: #1f84de;
+}
+
+.contact__summary__text ul li:last-child::before {
+  background-color: #f3a712;
+}
+
+.contact__summary__text ul li::before {
+  content: "";
+  position: absolute;
+  top: -0.625rem;
+  bottom: 0;
+  width: 2.125rem;
+  height: 2.5rem;
+  border-radius: 6px 0;
 }
 /*# sourceMappingURL=main.css.map */

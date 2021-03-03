@@ -48,8 +48,8 @@
       height: 100%;
       @include breakpoint-up(large) {
         background-position: top right;
-        top: 0;
-        right: -25%;
+        top: -7%;
+        right: 9%;
       }
     }
     @include breakpoint-down(medium) {
