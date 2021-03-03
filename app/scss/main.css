@@ -941,6 +941,10 @@ footer div ul li {
   margin-bottom: 1rem;
 }
 
+footer div ul li a, footer div ul li a:visited, footer div ul li a:hover {
+  color: white;
+}
+
 .contact__intro {
   margin-bottom: 4rem;
 }
