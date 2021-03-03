@@ -1,7 +1,9 @@
 .codegarrage {
   background: $dark-blue;
   padding-bottom: 1.625rem;
+
   &__intro {
+    margin-bottom: 3.5rem;
     @include breakpoint-up(large) {
       display: flex;
       align-items: center;
@@ -54,6 +56,10 @@
     p {
       color: $orange;
       font-weight: 600;
+      margin-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
     }
     &__parent {
       div {

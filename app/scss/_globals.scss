@@ -16,6 +16,7 @@ body {
   font-family: $lato;
   font-size: $font-medium;
   color: $primary-color;
+  position: relative;
 
   &.noscroll {
     overflow: hidden;
@@ -35,6 +36,9 @@ body {
   &-ai-c {
     align-items: center;
   }
+  &-50 {
+    flex: 1;
+  }
 }
 
 a,
@@ -45,14 +49,16 @@ a:hover {
 }
 
 .button {
+  display: inline-block;
   border-radius: 5px;
   background-color: $light-blue;
-  color: $white;
+  color: $white !important;
   padding: 0.75rem 1.5rem;
   border: 0 transparent;
   outline: none;
   font-size: $font-medium;
   cursor: pointer;
+
   &:focus {
     border: 0 transparent;
     outline: none;
@@ -110,4 +116,25 @@ p {
 h3 {
   font-size: 1.25rem;
   font-weight: bold;
+}
+.position {
+  &__absolute {
+    position: absolute;
+  }
+}
+.p-tb {
+  @include breakpoint-down(medium) {
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+  }
+}
+.m-t {
+  @include breakpoint-down(medium) {
+    margin-top: 0.9375rem;
+  }
+}
+.m-b {
+  @include breakpoint-down(medium) {
+    margin-bottom: 0.9375rem;
+  }
 }

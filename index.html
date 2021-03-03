@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <header class="header container">
+    <header class="header position__absolute container">
       <div class="overlay has-fade"></div>
       <nav class="flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo"
@@ -51,6 +51,14 @@
       </div>
     </header>
     <section class="intro intro__container">
+      <ul class="shapes shapes__intro">
+        <li><img src="images/shapes/line-square.svg" alt="square" /></li>
+        <li><img src="images/shapes/orange-circle.svg" alt="circle" /></li>
+        <li><img src="images/shapes/full-square.svg" alt="square" /></li>
+        <li><img src="images/shapes/blue-circle.svg" alt="circle" /></li>
+        <!-- <li><img src="images/shapes/line-square.svg" alt="square" /></li>
+        <li><img src="images/shapes/full-square.svg" alt="square" /></li> -->
+      </ul>
       <div class="intro__text">
         <h1>INNOVATIVE CUTTING EDGE TECHNOLOGY PROVIDER IN AFRICA</h1>
         <p>
@@ -62,7 +70,13 @@
       </div>
       <div class="intro__image"></div>
     </section>
-    <section class="about container">
+    <section class="about p-tb container">
+      <ul class="shapes">
+        <li><img src="images/shapes/blue-circle.svg" alt="circle" /></li>
+        <li><img src="images/shapes/orange-circle.svg" alt="circle" /></li>
+        <li><img src="images/shapes/orange-circle.svg" alt="circle" /></li>
+        <li><img src="images/shapes/blue-circle.svg" alt="circle" /></li>
+      </ul>
       <div class="hide-for-desktop">
         <p class="about__heading">ABOUT US</p>
         <h2>Why Choose 386Konsult?</h2>
@@ -92,7 +106,14 @@
         </ul>
       </div>
     </section>
-    <section class="service container">
+    <section class="service p-tb container">
+      <ul class="shapes shapes_services">
+        <li><img src="images/shapes/blue-circle.svg" alt="circle" /></li>
+        <li><img src="images/shapes/full-square.svg" alt="square" /></li>
+        <li><img src="images/shapes/full-square.svg" alt="square" /></li>
+        <li><img src="images/shapes/full-square.svg" alt="square" /></li>
+        <li><img src="images/shapes/orange-circle.svg" alt="circle" /></li>
+      </ul>
       <div>
         <p class="service__heading">OUR SERVICES</p>
         <h2>What 386Konsult Offers</h2>
@@ -133,8 +154,11 @@
         </div>
       </div>
     </section>
-    <section class="codegarrage">
+    <section class="codegarrage m-t">
       <div class="codegarrage__intro container">
+        <div class="codegarrage__image hide-for-desktop">
+          <img src="images/africa.svg" alt="africa" />
+        </div>
         <div class="codegarrage__text">
           <p>CodegarrageAfrica</p>
           <h2>
@@ -152,7 +176,7 @@
             >Take me to CodegarrageAfrica</a
           >
         </div>
-        <div class="codegarrage__image">
+        <div class="codegarrage__image hide-for-mobile">
           <img src="images/africa.svg" alt="africa" />
         </div>
       </div>
@@ -176,9 +200,105 @@
         </div>
       </div>
     </section>
-    <section class="feature container">
+    <section class="feature m-b container">
       <h2>386 clients</h2>
+      <div class="feature__logo flex flex-jc-sb flex-ai-c">
+        <div>
+          <img src="images/logos/esentry.svg" alt="esentry-logo" />
+        </div>
+        <div>
+          <img
+            src="images/logos/centric-gateway.svg"
+            alt="centric-gateway-logo"
+          />
+        </div>
+        <div>
+          <img src="images/logos/3line.svg" alt="3line-logo" />
+        </div>
+        <div>
+          <img src="images/logos/rcossolutions.svg" alt="rcossolutions-logo" />
+        </div>
+        <div>
+          <img src="images/logos/prophius.svg" alt="prophius-logo" />
+        </div>
+        <div>
+          <img src="images/logos/itex.svg" alt="itex-logo" />
+        </div>
+        <div>
+          <img src="images/logos/infoAssure.svg" alt="infoAssure-logo" />
+        </div>
+        <div>
+          <img src="images/logos/alphaedge.svg" alt="alphaedge-logo" />
+        </div>
+        <div>
+          <img src="images/logos/hugo.svg" alt="hugo-logo" />
+        </div>
+      </div>
     </section>
+    <section class="about p-tb m-b container">
+      <ul class="shapes">
+        <li><img src="images/shapes/orange-circle.svg" alt="circle" /></li>
+        <li><img src="images/shapes/blue-circle.svg" alt="circle" /></li>
+      </ul>
+      <div class="hide-for-desktop">
+        <p class="about__heading">CONTACT US</p>
+        <h2>Got an idea?</h2>
+      </div>
+      <div class="about__text">
+        <div class="hide-for-mobile">
+          <p class="about__heading">CONTACT US</p>
+          <h2>Got an idea?</h2>
+        </div>
+        <div class="about__image hide-for-desktop">
+          <img src="images/contact-summary.svg" />
+        </div>
+        <p>
+          At 386Konsult, we give the tech to actualize your idea, giving your
+          hope to dreams is one of our core values. Kindly explore our
+          Acceleration and Incubation Services.
+        </p>
+        <br />
+        <a href="contact.html" class="button">GET IN TOUCH</a>
+      </div>
+      <div class="about__image hide-for-mobile">
+        <img src="images/contact-summary.svg" />
+      </div>
+    </section>
+    <footer class="container flex flex-jc-sb">
+      <div>
+        <img src="images/logo-white.svg" alt="logo-white" />
+        <p>
+          At 386Konsult, We provide world class technology services that help
+          business achieve high level performance and accelerated growth.
+        </p>
+      </div>
+      <div>
+        <p>Quick Links</p>
+        <ul>
+          <li>About</li>
+          <li>Codegarrage</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div>
+        <p>Follow</p>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+      <div>
+        <p>Contact</p>
+        <ul>
+          <li>23, Herbert Maculay Yaba</li>
+          <li>Lagos, Nigeria</li>
+          <li>08185956620</li>
+          <li>Services@386konsult.com</li>
+        </ul>
+      </div>
+    </footer>
     <script src="app/js/index.js"></script>
   </body>
 </html>

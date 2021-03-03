@@ -58,3 +58,42 @@
     }
   }
 }
+.about__page {
+  h1 {
+    color: $light-blue;
+  }
+  .about_flex {
+    @include breakpoint-up(large) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+      .profile {
+        &__image {
+          order: 2;
+        }
+        &__text {
+          width: 60%;
+        }
+      }
+      .approach {
+        &__text, &__image {
+          width: 30%;
+        }
+        &__text {
+          div:first-child {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+    }
+    .approach,
+    .profile {
+      &__image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
