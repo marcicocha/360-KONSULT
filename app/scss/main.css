@@ -722,6 +722,7 @@ h3 {
 
 @media (min-width: 64em) {
   .codegarrage__intro {
+    padding-top: 1.625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
