@@ -874,8 +874,16 @@ h3 {
       flex-wrap: wrap;
 }
 
-.feature__logo div {
-  padding: 5px;
+.feature__logo div:not(:first-child), .feature__logo div:not(:last-child) {
+  padding: 0.625rem;
+}
+
+.feature__logo div:first-child {
+  padding: 0, 0.625rem, 0.625rem, 0.625rem;
+}
+
+.feature__logo div:last-child {
+  padding: 0.625rem, 0.625rem, 0.625rem, 0;
 }
 
 @media (max-width: 63.9375em) {
@@ -892,9 +900,14 @@ h3 {
 
 .feature__logo div img {
   width: 100%;
-  height: 2.5rem;
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+}
+
+@media (max-width: 63.9375em) {
+  .feature__logo div img {
+    height: 2.5rem;
+  }
 }
 
 footer {
