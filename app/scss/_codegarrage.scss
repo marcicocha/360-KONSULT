@@ -5,6 +5,7 @@
   &__intro {
     margin-bottom: 3.5rem;
     @include breakpoint-up(large) {
+      padding-top: 1.625rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
