@@ -1,5 +1,7 @@
 .service {
   position: relative;
+  width: 100%;
+  overflow: hidden;
   &::before {
     content: "";
     background-image: url("/images/shapes/line-orange-circle.svg");

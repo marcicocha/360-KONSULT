@@ -489,6 +489,8 @@ h3 {
 
 .about {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .about::before {
@@ -634,6 +636,8 @@ h3 {
 
 .service {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .service::before {
