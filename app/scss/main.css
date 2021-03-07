@@ -88,7 +88,7 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   color: #29335c;
   overflow-x: hidden;
   background: rgba(229, 229, 229, 0.03);
@@ -178,6 +178,7 @@ a:hover {
 
 h1 {
   font-family: "Open Sans", sans-serif;
+  font-weight: 800;
 }
 
 @media (max-width: 63.9375em) {
@@ -294,8 +295,8 @@ h3 {
 }
 
 .header__logo img {
-  width: 5rem;
-  height: 3.4375rem;
+  width: 5.5rem;
+  height: 4rem;
 }
 
 .header__toggle > span {
@@ -433,7 +434,7 @@ h3 {
 
 @media (min-width: 64em) {
   .intro__text {
-    width: 43.8125rem;
+    width: 50rem;
   }
   .intro__text p {
     width: 27.5rem;
@@ -482,7 +483,7 @@ h3 {
   .intro__image {
     background-image: url("/images/header-image-web.svg");
     min-height: 31.25rem;
-    width: 31.25rem;
+    width: 33.25rem;
     background-position: center, center;
   }
 }
@@ -1001,6 +1002,10 @@ footer div ul li a, footer div ul li a:visited, footer div ul li a:hover {
   color: #1f84de;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.contact__summary p:nth-child(2) {
+  margin-top: 0.5rem;
 }
 
 .contact__summary p:last-child {
