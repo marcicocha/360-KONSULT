@@ -59,7 +59,7 @@
       margin-bottom: 30px;
     }
     @include breakpoint-up(large) {
-      width: 43.8125rem;
+      width: 50rem;
       p {
         width: 27.5rem;
       }
@@ -97,7 +97,7 @@
     @include breakpoint-up(large) {
       background-image: url("/images/header-image-web.svg");
       min-height: 31.25rem;
-      width: 31.25rem;
+      width: 33.25rem;
       background-position: center, center;
     }
   }
