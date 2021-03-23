@@ -246,6 +246,18 @@ h3 {
   padding: 5rem;
 }
 
+.lang-btn {
+  display: block;
+  border: 1px solid #29335c;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.d-n {
+  display: none;
+}
+
 .header {
   width: 100%;
 }
@@ -589,7 +601,6 @@ h3 {
   content: "";
   position: absolute;
   top: -0.625rem;
-  bottom: 0;
   width: 2.125rem;
   height: 2.5rem;
   border-radius: 6px 0;

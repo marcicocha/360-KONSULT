@@ -35,19 +35,37 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="/">Home</a>
-          <a href="about.html">About</a>
+          <a href="/" id="home">Home</a>
+          <a href="about.html" id="about">About</a>
           <a href="/">CodeGarage</a>
         </div>
 
-        <a href="contact.html" class="button header__button hide-for-mobile"
-          >GET IN TOUCH</a
-        >
+        <div class="hide-for-mobile flex flex-ai-c">
+          <a href="contact.html" id="header-button" class="button header__button">GET IN TOUCH</a>
+          <div style="margin-left: 1rem">
+            <button class="lang-btn btn1" onclick="changeLng('fr')">
+              French
+            </button>
+            <button class="lang-btn btn2 d-n" onclick="changeLng('en')">
+              English
+            </button>
+          </div>
+        </div>
       </nav>
       <div class="header__menu has-fade">
         <a href="/">Home</a>
         <a href="about.html">About</a>
         <a href="/">CodeGarage</a>
+        <a href="contact.html">Contact</a>
+        <br />
+        <div style="text-align: center">
+          <button class="lang-btn btn1" onclick="changeLng('fr')">
+            French
+          </button>
+          <button class="lang-btn btn2 d-n" onclick="changeLng('en')">
+            English
+          </button>
+        </div>
       </div>
     </header>
     <section class="intro intro__container">
@@ -60,13 +78,17 @@
         <li><img src="images/shapes/full-square.svg" alt="square" /></li> -->
       </ul>
       <div class="intro__text">
-        <h1>INNOVATIVE CUTTING EDGE TECHNOLOGY PROVIDER IN AFRICA</h1>
-        <p>
+        <h1 id="intro-title">
+          INNOVATIVE CUTTING EDGE TECHNOLOGY PROVIDER IN AFRICA
+        </h1>
+        <p id="intro-description">
           At 386Konsult, We provide world class technology services that help
           business achieve high level performance and accelerated growth.
         </p>
         <br />
-        <a href="contact.html" class="button header__button">GET IN TOUCH</a>
+        <a href="contact.html" id="intro-button" class="button header__button"
+          >GET IN TOUCH</a
+        >
       </div>
       <div class="intro__image"></div>
     </section>
@@ -77,30 +99,30 @@
         <li><img src="images/shapes/orange-circle.svg" alt="circle" /></li>
       </ul>
       <div class="hide-for-desktop">
-        <p class="about__heading">ABOUT US</p>
-        <h2>Why Choose 386Konsult?</h2>
+        <p id="about-heading" class="about__heading">ABOUT US</p>
+        <h2 id="about-subheading">Why Choose 386Konsult?</h2>
       </div>
       <div class="about__image image-padding">
         <img src="images/about-summary.svg" />
       </div>
       <div class="about__text">
         <div class="hide-for-mobile">
-          <p class="about__heading">ABOUT US</p>
-          <h2>Why Choose 386Konsult?</h2>
+          <p id="about-heading2" class="about__heading">ABOUT US</p>
+          <h2 id="about-subheading2">Why Choose 386Konsult?</h2>
         </div>
-        <p>
+        <p id="about-description">
           386 Konsult is a technology driven consulting firm that develops and
           deploys software to significantly optimize business operational cost
           through enhanced services.
         </p>
-        <p>
+        <p id="about-subdescription">
           Our Consultants in their Respective fields bring the following to the
           table:
         </p>
         <ul>
-          <li><span>First hand experience</span></li>
-          <li><span>Academic Certification</span></li>
-          <li><span>Industrial Certification</span></li>
+          <li><span id="about-li1">First hand experience</span></li>
+          <li><span id="about-li2">Academic Certification</span></li>
+          <li><span id="about-li3">Industrial Certification</span></li>
         </ul>
       </div>
     </section>
@@ -112,8 +134,8 @@
         <li><img src="images/shapes/full-square.svg" alt="square" /></li>
       </ul>
       <div>
-        <p class="service__heading">OUR SERVICES</p>
-        <h2>What 386Konsult Offers</h2>
+        <p id="service-heading" class="service__heading">OUR SERVICES</p>
+        <h2 id="service-subheading">What 386Konsult Offers</h2>
       </div>
       <div class="service__flex">
         <div class="service__image image-padding">
@@ -121,9 +143,9 @@
         </div>
         <div class="service__text">
           <div>
-            <h3>CYBER SECURITY SERVICES</h3>
+            <h3 id="cyber-heading">CYBER SECURITY SERVICES</h3>
           </div>
-          <p>
+          <p id="cyber-description">
             We understand that each business has its own unique strengths and
             challenges; we offer security services to help enterprises achieve
             business resilience, accelerated growth, improved efficiency and
@@ -138,11 +160,13 @@
         </div>
         <div class="service__text">
           <div>
-            <h3 class="service__heading">RESEARCH & DEVELOPMENT</h3>
+            <h3 id="research-heading" class="service__heading">
+              RESEARCH & DEVELOPMENT
+            </h3>
           </div>
-          <p>
+          <p id="research-description">
             Research and Development involves sicentific research, Development
-            of mathematical models for proposed scientific hypothesis, builtding
+            of mathematical models for proposed scientific hypothesis, building
             prototypes and benchamarking them against existing implemtation. it
             also involves the upgrade of already existing products owned,
             managed or in use by our clients. Upgrades done on existing products
@@ -160,18 +184,18 @@
         </div>
         <div class="codegarrage__text">
           <p>CodeGarageAfrica</p>
-          <h2>
+          <h2 id="codegarrage-heading">
             Turn the best of your business ideas into innovative software
             solutions.
           </h2>
-          <p>
+          <p id="codegarrage-description">
             Our software engineers build high-quality solutions while utilizing
             the most recent tech capabilities. The range of our services is wide
             as we have a tech stack that would satisfy all the possible modern
             requirements of the IT business.
           </p>
           <br />
-          <a href="#" class="button codegarrage__button"
+          <a href="#" id="codegarrage-button" class="button codegarrage__button"
             >Take me to CodeGarageAfrica</a
           >
         </div>
@@ -181,20 +205,20 @@
       </div>
       <div class="codegarrage__feature container">
         <p>CodeGarageAfrica</p>
-        <h2>Acceleration & Incubation</h2>
+        <h2 id="acceleration">Acceleration & Incubation</h2>
         <br />
         <div class="codegarrage__feature__parent">
           <div>
-            <h5>Lucro</h5>
-            <p>Mobile Application</p>
+            <h5 id="lucro">Lucro</h5>
+            <p id="lucro-description">Mobile Application</p>
           </div>
           <div>
-            <h5>Bankless</h5>
-            <p>Financial Mobile Application</p>
+            <h5 id="bankless">Bankless</h5>
+            <p id="bankless-description">Financial Mobile Application</p>
           </div>
           <div>
-            <h5>Pancake</h5>
-            <p>Mobile Application</p>
+            <h5 id="pancake">Pancake</h5>
+            <p id="pancake-description">Mobile Application</p>
           </div>
         </div>
       </div>
@@ -240,24 +264,26 @@
         <li><img src="images/shapes/blue-circle.svg" alt="circle" /></li>
       </ul>
       <div class="hide-for-desktop">
-        <p class="about__heading">CONTACT US</p>
-        <h2>Got an idea?</h2>
+        <p id="contact-heading" class="about__heading">CONTACT US</p>
+        <h2 id="contact-subheading">Got an idea?</h2>
       </div>
       <div class="contact__summary__text">
         <div class="hide-for-mobile">
-          <p class="about__heading">CONTACT US</p>
-          <h2>Got an idea?</h2>
+          <p id="contact-heading2" class="about__heading">CONTACT US</p>
+          <h2 id="contact-subheading2">Got an idea?</h2>
         </div>
         <div class="contact__summary__image hide-for-desktop">
           <img src="images/contact-summary.svg" />
         </div>
-        <p>
+        <p id="contact-description">
           At 386Konsult, we give the tech to actualize your idea, giving your
           hope to dreams is one of our core values. Kindly explore our
           Acceleration and Incubation Services.
         </p>
         <br />
-        <a href="contact.html" class="button">GET IN TOUCH</a>
+        <a href="contact.html" id="contact-button" class="button"
+          >ENTRER EN CONTACT</a
+        >
       </div>
       <div class="about__image image-padding hide-for-mobile">
         <img src="images/contact-summary.svg" />
@@ -266,21 +292,22 @@
     <footer class="container flex flex-jc-sb">
       <div>
         <img src="images/logo-white.svg" alt="logo-white" />
-        <p>
+        <p id="footer-description">
           At 386Konsult, We provide world class technology services that help
           business achieve high level performance and accelerated growth.
         </p>
       </div>
       <div>
-        <p>Quick Links</p>
+        <p id="quick-link">Quick Links</p>
         <ul>
-          <li><a href="about.html">About</a></li>
+          <li><a href="/" id="footer-home">Home</a></li>
+          <li><a href="about.html" id="footer-about">About</a></li>
           <li><a href="/">Codegarrage</a></li>
-          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="contact.html" id="contact">Get in touch</a></li>
         </ul>
       </div>
       <div>
-        <p>Follow</p>
+        <p id="follow">Follow</p>
         <ul>
           <li>
             <a
@@ -308,7 +335,7 @@
         </ul>
       </div>
       <div>
-        <p>Contact</p>
+        <p id="contact">Contact</p>
         <ul>
           <li>10 Karimu Wiliams Enclave Sabo Yaba</li>
           <li>Lagos, Nigeria</li>
@@ -318,5 +345,273 @@
       </div>
     </footer>
     <script src="app/js/index.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script type="text/javascript">
+      const en = {
+        "header-title": "INNOVATIVE CUTTING EDGE TECHNOLOGY PROVIDER IN AFRICA",
+        "header-description":
+          "At 386Konsult, We provide world class technology services that help business achieve high level performance and accelerated growth",
+        "header-button": "GET IN TOUCH",
+        "about-heading": "ABOUT US",
+        "about-subheading": "Why Choose 386Konsult",
+        "about-description":
+          "386 Konsult is a technology driven consulting firm that develops and deploys software to significantly optimize business operational cost through enhanced services",
+        "about-subdescription":
+          "Our Consultants in their Respective fields bring the following to the table",
+        "about-list1": "First hand experience",
+        "about-list2": "Academic Certification",
+        "about-list3": "Industrial Certification",
+        "service-heading": "OUR SERVICES",
+        "service-subheading": "What 386Konsult Offers",
+        "cyber-heading": "CYBER SECURITY SERVICES",
+        "cyber-description":
+          "We understand that each business has its own unique strengths and challenges; we offer security services to help enterprises achieve business resilience, accelerated growth, improved efficiency and build organizational capabilities. With our services, business owners can protect their greatest asset—their company",
+        "research-heading": "RESEARCH & DEVELOPMENT",
+        "research-description":
+          "Research and Development involves sicentific research, Development of mathematical models for proposed scientific hypothesis, building prototypes and benchamarking them against existing implemtation. it also involves the upgrade of already existing products owned, managed or in use by our clients. Upgrades done on existing products must meet guidelines and specifications given by product owner. 386konsult team will also ensure the seamless reintegration of upgraded products to our client's environment",
+        "codegarrage-heading":
+          "Turn the best of your business ideas into innovative software solutions",
+        "codegarrage-description":
+          "Our software engineers build high-quality solutions while utilizing the most recent tech capabilities. The range of our services is wide as we have a tech stack that would satisfy all the possible modern requirements of the IT business",
+        "codegarrage-button": "Take me to CodeGarageAfrica",
+        acceleration: "Acceleration & Incubation",
+        lucro: "Lucro",
+        bankless: "Bankless",
+        pancake: "Pancake",
+        "lucro-description": "Mobile Application",
+        "bankless-description": "Financial Mobile Application",
+        "pancake-description": "Mobile Application",
+        "contact-heading": "CONTACT US",
+        "contact-subheading": "Got an idea?",
+        "contact-description":
+          "At 386Konsult, we give the tech to actualize your idea, giving your hope to dreams is one of our core values. Kindly explore our Acceleration and Incubation Services",
+        "footer-description":
+          " At 386Konsult, We provide world class technology services that help business achieve high level performance and accelerated growth.",
+        home: "Home",
+        about: "About",
+        contact: "Contact",
+        follow: "Follow",
+        "quick-link": "Quick Links",
+      };
+      const fr = {
+        "header-title":
+          "FOURNISSEUR DE TECHOLOGIE DE POINT INOVATIVE EN AFRIQUE",
+        "header-description":
+          "À 386Konsult, nous fournissons des services technologies de classe mondiale qui aident les enterprises à atteindre des performances de haut niveau et une croissance accélerée",
+        "header-button": "ENTRER EN CONTACT",
+        "about-heading": "A PROPOS DE NOUS",
+        "about-subheading": "Pourquoi choisir 386konsult",
+        "about-description":
+          "386 Konsult est une société de conseil axée sur la technologie qui développe et déploie des logiciels pour optimiser de manière significative les coûts opérationnels de l'entreprise grâce à des services améliorés",
+        "about-subdescription":
+          "Nos consultants dans leur demaines respectifs apportent ce qui suit à la table",
+        "about-list1": "Experience de premier main",
+        "about-list2": "Certification acdémique",
+        "about-list3": "Certification Industrielle",
+        "service-heading": "NOS SERVICES",
+        "service-subheading": "Ce que 386konsult propose",
+        "cyber-heading": "SERVICE DE CYBER SÉCURITÉ",
+        "cyber-description":
+          "Nous comprenons que chaque entreprise a ses propres forces et defis unique. Nous offrons des services de securité pour aider les entreprises à atteindre la réssilience commercial, une croissance accélérée une efficacité amélorée et reforcer les capacités organisationnelles avec nos services, les propriétaires d'entreprise peuvent protéger leur plus atout-leur entreprises",
+        "research-heading": "RECHERCHE ET DEVELOPMENT",
+        "research-description":
+          "Rechercher et le dévelopment implique également la mise à niveau de produits déja existants déterus, géré ou utilisés par nos clients. Les mises à niveau effectuées sur les produits existants doivent respecter les produits existants doivent respecter les  directives et les spécifications données par le proriétaire du produit.l'equipe 386konsult assurera également la réintégration transparente des produits mis à niveau dans l’environnment de nos clients",
+        "codegarrage-heading":
+          "Transformez le meilleur de vos idées commerciales en solutions, logiciels Innovantes",
+        "codegarrage-description":
+          "Nos ingénieurs creent des solutions de haute qualité tout en utilisant les capacitiés technologiques les plus recentes. La gamme de nos services est large car nous disponsons d'une pile technologique qui satisferait a toutes les exigences mordernes possibles de l'entreprise Informatique",
+        "codegarrage-button": "Emmenez-moi à CodeGarageAfrica",
+        acceleration: "Accélération et incubation",
+        lucro: "Lucro",
+        bankless: "Sans banque",
+        pancake: "Crêpe",
+        "lucro-description": "Application mobile",
+        "bankless-description": "Application mobile financière",
+        "pancake-description": "Application mobile",
+        "contact-heading": "NOUS CONTACTER",
+        "contact-subheading": "Eu une idée?",
+        "contact-description":
+          "Chez 386Konsult, nous donnons la technologie pour actualiser votre idée, donner votre espoir aux rêves est l'une de nos valeurs fondamentales. Veuillez explorer nos services d'accélération et d'incubation",
+        "footer-description":
+          "Chez 386Konsult, nous fournissons des services technologiques de classe mondiale qui aident les entreprises à atteindre des performances de haut niveau et une croissance accélérée.",
+        home: "Domicile",
+        about: "À propos de",
+        contact: "Contacter",
+        follow: "Suivre",
+        "quick-link": "Liens rapides",
+      };
+      i18next.init(
+        {
+          lng: "en",
+          debug: true,
+          resources: {
+            en: {
+              translation: {
+                ...en,
+              },
+            },
+            fr: {
+              translation: {
+                ...fr,
+              },
+            },
+          },
+        },
+        function (err, t) {
+          // init set content
+          updateContent();
+        }
+      );
+
+      // just set some content and react to language changes
+      // could be optimized using vue-i18next, jquery-i18next, react-i18next, ...
+      function updateContent() {
+        document.getElementById("intro-title").innerHTML = i18next.t(
+          "header-title"
+        );
+        document.getElementById("intro-description").innerHTML = i18next.t(
+          "header-description"
+        );
+        document.getElementById("intro-button").innerHTML = i18next.t(
+          "header-button"
+        );
+        document.getElementById("header-button").innerHTML = i18next.t(
+          "header-button"
+        );
+        document.getElementById("about-heading").innerHTML = i18next.t(
+          "about-heading"
+        );
+        document.getElementById("about-subheading").innerHTML = i18next.t(
+          "about-subheading"
+        );
+        document.getElementById("about-heading2").innerHTML = i18next.t(
+          "about-heading"
+        );
+        document.getElementById("about-subheading2").innerHTML = i18next.t(
+          "about-subheading"
+        );
+        document.getElementById("about-description").innerHTML = i18next.t(
+          "about-description"
+        );
+        document.getElementById("about-subdescription").innerHTML = i18next.t(
+          "about-subdescription"
+        );
+        document.getElementById("about-li1").innerHTML = i18next.t(
+          "about-list1"
+        );
+        document.getElementById("about-li2").innerHTML = i18next.t(
+          "about-list2"
+        );
+        document.getElementById("about-li3").innerHTML = i18next.t(
+          "about-list3"
+        );
+        document.getElementById("service-heading").innerHTML = i18next.t(
+          "service-heading"
+        );
+        document.getElementById("service-subheading").innerHTML = i18next.t(
+          "service-subheading"
+        );
+        document.getElementById("cyber-heading").innerHTML = i18next.t(
+          "cyber-heading"
+        );
+        document.getElementById("cyber-description").innerHTML = i18next.t(
+          "cyber-description"
+        );
+        document.getElementById("research-heading").innerHTML = i18next.t(
+          "research-heading"
+        );
+        document.getElementById("research-description").innerHTML = i18next.t(
+          "research-description"
+        );
+        document.getElementById("codegarrage-heading").innerHTML = i18next.t(
+          "codegarrage-heading"
+        );
+        document.getElementById(
+          "codegarrage-description"
+        ).innerHTML = i18next.t("codegarrage-description");
+        document.getElementById("codegarrage-button").innerHTML = i18next.t(
+          "codegarrage-button"
+        );
+        document.getElementById("acceleration").innerHTML = i18next.t(
+          "acceleration"
+        );
+        document.getElementById("lucro").innerHTML = i18next.t("lucro");
+        document.getElementById("bankless").innerHTML = i18next.t("bankless");
+        document.getElementById("pancake").innerHTML = i18next.t("pancake");
+        document.getElementById("lucro-description").innerHTML = i18next.t(
+          "lucro-description"
+        );
+        document.getElementById("bankless-description").innerHTML = i18next.t(
+          "bankless-description"
+        );
+        document.getElementById("pancake-description").innerHTML = i18next.t(
+          "pancake-description"
+        );
+        document.getElementById("contact-heading").innerHTML = i18next.t(
+          "contact-heading"
+        );
+        document.getElementById("contact-subheading").innerHTML = i18next.t(
+          "contact-subheading"
+        );
+        document.getElementById("contact-heading2").innerHTML = i18next.t(
+          "contact-heading"
+        );
+        document.getElementById("contact-subheading2").innerHTML = i18next.t(
+          "contact-subheading"
+        );
+        document.getElementById("contact-description").innerHTML = i18next.t(
+          "contact-description"
+        );
+        document.getElementById("contact-button").innerHTML = i18next.t(
+          "header-button"
+        );
+        document.getElementById("footer-description").innerHTML = i18next.t(
+          "footer-description"
+        );
+        document.getElementById("home").innerHTML = i18next.t("home");
+        document.getElementById("footer-home").innerHTML = i18next.t("home");
+        document.getElementById("about").innerHTML = i18next.t("about");
+        document.getElementById("footer-about").innerHTML = i18next.t("about");
+        document.getElementById("contact").innerHTML = i18next.t("contact");
+        document.getElementById("follow").innerHTML = i18next.t("follow");
+        document.getElementById("quick-link").innerHTML = i18next.t(
+          "quick-link"
+        );
+      }
+
+      function changeLng(lng) {
+        const btn1 = document.querySelectorAll(".btn1");
+        const btn2 = document.querySelectorAll(".btn2");
+        const header = document.querySelector(".header");
+        const fadeElements = document.querySelectorAll(".has-fade");
+        console.log("CLICKED");
+        if (lng === "en") {
+          btn1.forEach((element) => {
+            element.classList.remove("d-n");
+          });
+          btn2.forEach((element) => {
+            element.classList.add("d-n");
+          });
+        } else {
+          btn1.forEach((element) => {
+            element.classList.add("d-n");
+          });
+          btn2.forEach((element) => {
+            element.classList.remove("d-n");
+          });
+        }
+        body.classList.remove("noscroll");
+        header.classList.remove("open");
+        fadeElements.forEach((element) => {
+          element.classList.add("fade-out");
+          element.classList.remove("fade-in");
+        });
+        i18next.changeLanguage(lng);
+      }
+
+      i18next.on("languageChanged", () => {
+        updateContent();
+      });
+    </script>
   </body>
 </html>
