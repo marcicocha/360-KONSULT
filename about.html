@@ -35,25 +35,48 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="/">Home</a>
-          <a href="about.html">About</a>
+          <a href="/" id="home">Home</a>
+          <a href="about.html" id="about">About</a>
           <a href="/">Code garrage</a>
         </div>
 
-        <a href="contact.html" class="button header__button hide-for-mobile"
-          >GET IN TOUCH</a
-        >
+        <div class="hide-for-mobile flex flex-ai-c">
+          <a
+            href="contact.html"
+            id="header-button"
+            class="button header__button"
+            >GET IN TOUCH</a
+          >
+          <div style="margin-left: 1rem">
+            <button class="lang-btn btn1" onclick="changeLng('fr')">
+              French
+            </button>
+            <button class="lang-btn btn2 d-n" onclick="changeLng('en')">
+              English
+            </button>
+          </div>
+        </div>
       </nav>
       <div class="header__menu has-fade">
         <a href="/">Home</a>
         <a href="about.html">About</a>
         <a href="/">Code garrage</a>
+        <a href="contact.html">Contact</a>
+        <br />
+        <div>
+          <button class="lang-btn btn1" onclick="changeLng('fr')">
+            French
+          </button>
+          <button class="lang-btn btn2 d-n" onclick="changeLng('en')">
+            English
+          </button>
+        </div>
       </div>
     </header>
     <div class="about__page">
       <section class="container">
-        <h1>About us</h1>
-        <p>
+        <h1 id="about-heading">About us</h1>
+        <p id="about-description1">
           Operational costs, systems availability, compliance and security,
           disaster recovery all contributes to today’s incresingly complex IT
           environement. Managing your infrastruture on a day-day basis can be
@@ -62,7 +85,7 @@
           infrastructure and the engine which runs your business is taken away
           from your focus
         </p>
-        <p>
+        <p id="about-description2">
           386Konsult offerings brings clients a high level of industry and best
           in class technology knowledge combined with actionable recommendations
           tailored specifically to your business. With our objective, Unbiased
@@ -77,24 +100,24 @@
         </div>
         <div class="profile__text">
           <div>
-            <h2>Our Profile</h2>
-            <p>
+            <h2 id="profile-heading">Our Profile</h2>
+            <p id="profile-description1">
               We have professionals that have developed deep competencies in
               Information Systems, Information Security, Information Technology
               Assurance, Software Development Methodologies
             </p>
-            <p>
+            <p id="profile-description2">
               The skill sets of our consultants encompass the following areas:
               Systems security, networking and database skills and competencies:
               Demonstrated with global Information Security certification and IT
             </p>
-            <p>
+            <p id="profile-description3">
               We have a team of creative developers who lean on the vast
               experience of our consultants from several sectors/environments;
               this forms the backbone of our enriched design and content
               development
             </p>
-            <p>
+            <p id="profile-description4">
               Wide-scale experiential knowledge in Technology Assessments,
               framework development, Implementation Management exercises, and
               our knowledge of best-practices, frameworks and references have
@@ -109,8 +132,8 @@
         </div>
         <div class="approach__text">
           <div>
-            <h4>Invitation Phase</h4>
-            <p>
+            <h4 id="invitation">Invitation Phase</h4>
+            <p id="invitation-description">
               In this phase, we create a shared vision among top executives and
               key stakeholders that represents the organization’s
               high-performing future
@@ -118,8 +141,8 @@
           </div>
           <br />
           <div>
-            <h4>Envision Phase</h4>
-            <p>
+            <h4 id="envision">Envision Phase</h4>
+            <p id="envision-description">
               The objective of this phase is to develop a clear comprehensive
               blueprint by building upon the vision and developing the process
               models to acheive high performance
@@ -128,8 +151,8 @@
         </div>
         <div class="approach__text">
           <div>
-            <h4>Create Phase</h4>
-            <p>
+            <h4 id="create">Create Phase</h4>
+            <p id="create-description">
               During the create phase, all components that are part of the
               envision phase are designed, constructed, fully tested and
               integrated within the organization. There may be multiple create
@@ -138,8 +161,8 @@
             </p>
           </div>
           <div>
-            <h4>Achieve Phase</h4>
-            <p>
+            <h4 id="achieve">Achieve Phase</h4>
+            <p id="achieve-description">
               The primary objective of this phase is to integarte the components
               built in the create phase into the organization’s business.
             </p>
@@ -150,22 +173,23 @@
 
     <footer class="container flex flex-jc-sb">
       <div>
-        <a href="/"><img src="images/logo-white.svg" alt="logo-white" /></a>
-        <p>
+        <img src="images/logo-white.svg" alt="logo-white" />
+        <p id="footer-description">
           At 386Konsult, We provide world class technology services that help
           business achieve high level performance and accelerated growth.
         </p>
       </div>
       <div>
-        <p>Quick Links</p>
+        <p id="quick-link">Quick Links</p>
         <ul>
-          <li><a href="about.html">About</a></li>
+          <li><a href="/" id="footer-home">Home</a></li>
+          <li><a href="about.html" id="footer-about">About</a></li>
           <li><a href="/">Codegarrage</a></li>
-          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="contact.html" id="contact">Get in touch</a></li>
         </ul>
       </div>
       <div>
-        <p>Follow</p>
+        <p id="follow">Follow</p>
         <ul>
           <li>
             <a
@@ -175,7 +199,8 @@
             >
           </li>
           <li>
-            <a href="https://twitter.com/386konsult" target="_blank">Twitter</a>
+            <a href="https://twitter.com/386konsult" target="_blank"></a>
+            Twitter
           </li>
           <li>
             <a href="https://www.instagram.com/386konsult" target="_blank"
@@ -192,7 +217,7 @@
         </ul>
       </div>
       <div>
-        <p>Contact</p>
+        <p id="contact">Contact</p>
         <ul>
           <li>10 Karimu Wiliams Enclave Sabo Yaba</li>
           <li>Lagos, Nigeria</li>
@@ -202,5 +227,196 @@
       </div>
     </footer>
     <script src="app/js/index.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script type="text/javascript">
+      const en = {
+        "header-button": "GET IN TOUCH",
+        "footer-description":
+          " At 386Konsult, We provide world class technology services that help business achieve high level performance and accelerated growth.",
+        home: "Home",
+        about: "About",
+        contact: "Contact",
+        follow: "Follow",
+        "quick-link": "Quick Links",
+        "about-heading": "ABOUT US",
+        "about-description1":
+          "Operational costs, systems availability, compliance and security, disaster recovery all contributes to today’s incresingly complex IT environement. Managing your infrastruture on a day-day basis can be challenging. Most times dealing with immediate business issues that is important to the future of the company would require that infrastructure and the engine which runs your business is taken away from your focus",
+        "about-description2":
+          "386Konsult offerings brings clients a high level of industry and best in class technology knowledge combined with actionable recommendations tailored specifically to your business. With our objective, Unbiased and forward-looking view, We help clients explore new technologies and solutions. At 386Konsult, we bring the best to your table.",
+        "profile-heading": "Our Profile",
+        "profile-description1":
+          "We have professionals that have developed deep competencies in Information Systems, Information Security, Information Technology Assurance, Software Development Methodologies",
+        "profile-description2":
+          "The skill sets of our consultants encompass the following areas: Systems security, networking and database skills and competencies: Demonstrated with global Information Security certification and IT",
+        "profile-description3":
+          "We have a team of creative developers who lean on the vast experience of our consultants from several sectors/environments; this forms the backbone of our enriched design and content development",
+        "profile-description4":
+          "Wide-scale experiential knowledge in Technology Assessments, framework development, Implementation Management exercises, and our knowledge of best-practices, frameworks and references have been demonstrated in the richness of assignments.",
+        invitation: "Invitation Phase",
+        "invitation-description":
+          "In this phase, we create a shared vision among top executives and key stakeholders that represents the organization’s high-performing future",
+        envision: "Envision Phase",
+        "envision-description":
+          "The objective of this phase is to develop a clear comprehensive blueprint by building upon the vision and developing the process models to acheive high performance",
+        create: "Create Phase",
+        "create-description":
+          "During the create phase, all components that are part of the envision phase are designed, constructed, fully tested and integrated within the organization. There may be multiple create phases one for each transition segment identified during the envision phase.",
+        achieve: "Achieve Phase",
+        "achieve-description":
+          "The primary objective of this phase is to integarte the components built in the create phase into the organization’s business.",
+      };
+      const fr = {
+        "header-button": "ENTRER EN CONTACT",
+        "footer-description":
+          "Chez 386Konsult, nous fournissons des services technologiques de classe mondiale qui aident les entreprises à atteindre des performances de haut niveau et une croissance accélérée.",
+        home: "Domicile",
+        about: "À propos de",
+        contact: "Contacter",
+        follow: "Suivre",
+        "quick-link": "Liens rapides",
+        "about-heading": "A PROPOS DE NOUS",
+        "about-description1":
+          "Les coûts opérationnels, la disponibilité des systèmes, la conformité et la sécurité, la reprise après sinistre contribuent tous à l’environnement informatique de plus en plus complexe d’aujourd’hui. La gestion quotidienne de votre infrastructure peut être difficile. La plupart du temps, faire face à des problèmes commerciaux immédiats importants pour l'avenir de l'entreprise exigerait que l'infrastructure et le moteur qui dirigent votre entreprise soient éloignés de votre objectif.",
+        "about-description2":
+          "Les offres 386Konsult apportent aux clients un haut niveau de l'industrie et des connaissances technologiques de pointe combinées à des recommandations exploitables adaptées spécifiquement à votre entreprise. Avec notre vision objective, impartiale et tournée vers l'avenir, nous aidons nos clients à explorer de nouvelles technologies et solutions. Chez 386Konsult, nous apportons le meilleur à votre table.",
+        "profile-heading": "Notre profil",
+        "profile-description1":
+          "Nous avons des professionnels qui ont développé des compétences approfondies dans les systèmes d'information, la sécurité de l'information, l'assurance des technologies de l'information, les méthodologies de développement de logiciels",
+        "profile-description2":
+          "Les compétences de nos consultants englobent les domaines suivants: Sécurité des systèmes, réseaux et bases de données",
+        "profile-description3":
+          "Nous avons une équipe de développeurs créatifs qui s'appuient sur la vaste expérience de nos consultants issus de plusieurs secteurs / environnements; cela constitue l'épine dorsale de notre conception enrichie et de notre développement de contenu",
+        "profile-description4":
+          "Des connaissances expérientielles à grande échelle dans les évaluations technologiques, le développement de cadres, les exercices de gestion de la mise en œuvre et notre connaissance des meilleures pratiques, des cadres et des références ont été démontrées dans la richesse des missions.",
+        invitation: "Phase d'invitation",
+        "invitation-description":
+          "Au cours de cette phase, nous créons une vision partagée entre les cadres supérieurs et les principales parties prenantes qui représente l’avenir hautement performant de l’organisation.",
+        envision: "Phase de vision",
+        "envision-description":
+          "L'objectif de cette phase est de développer un plan détaillé clair en s'appuyant sur la vision et en développant les modèles de processus pour atteindre des performances élevées.",
+        create: "Créer une phase",
+        "create-description":
+          "Pendant la phase de création, tous les composants qui font partie de la phase de visualisation sont conçus, construits, entièrement testés et intégrés au sein de l'organisation. Il peut y avoir plusieurs phases de création une pour chaque segment de transition identifié pendant la phase de visualisation.",
+        achieve: "Atteindre la phase",
+        "achieve-description":
+          "L’objectif principal de cette phase est d’intégrer les composants intégrés dans la phase de création dans les activités de l’organisation.",
+      };
+      i18next.init(
+        {
+          lng: "en",
+          debug: true,
+          resources: {
+            en: {
+              translation: {
+                ...en,
+              },
+            },
+            fr: {
+              translation: {
+                ...fr,
+              },
+            },
+          },
+        },
+        function (err, t) {
+          // init set content
+          updateContent();
+        }
+      );
+
+      function updateContent() {
+        document.getElementById("header-button").innerHTML = i18next.t(
+          "header-button"
+        );
+        document.getElementById("footer-description").innerHTML = i18next.t(
+          "footer-description"
+        );
+        document.getElementById("home").innerHTML = i18next.t("home");
+        document.getElementById("footer-home").innerHTML = i18next.t("home");
+        document.getElementById("about").innerHTML = i18next.t("about");
+        document.getElementById("footer-about").innerHTML = i18next.t("about");
+        document.getElementById("contact").innerHTML = i18next.t("contact");
+        document.getElementById("follow").innerHTML = i18next.t("follow");
+        document.getElementById("quick-link").innerHTML = i18next.t(
+          "quick-link"
+        );
+        document.getElementById("about-heading").innerHTML = i18next.t(
+          "about-heading"
+        );
+        document.getElementById("about-description1").innerHTML = i18next.t(
+          "about-description1"
+        );
+        document.getElementById("about-description2").innerHTML = i18next.t(
+          "about-description2"
+        );
+        document.getElementById("profile-heading").innerHTML = i18next.t(
+          "profile-heading"
+        );
+        document.getElementById("profile-description1").innerHTML = i18next.t(
+          "profile-description1"
+        );
+        document.getElementById("profile-description2").innerHTML = i18next.t(
+          "profile-description2"
+        );
+        document.getElementById("profile-description3").innerHTML = i18next.t(
+          "profile-description3"
+        );
+        document.getElementById("profile-description4").innerHTML = i18next.t(
+          "profile-description4"
+        );
+        document.getElementById("invitation").innerHTML = i18next.t(
+          "invitation"
+        );
+        document.getElementById("invitation-description").innerHTML = i18next.t(
+          "invitation-description"
+        );
+        document.getElementById("envision").innerHTML = i18next.t("envision");
+        document.getElementById("envision-description").innerHTML = i18next.t(
+          "envision-description"
+        );
+        document.getElementById("create").innerHTML = i18next.t("create");
+        document.getElementById("create-description").innerHTML = i18next.t(
+          "create-description"
+        );
+        document.getElementById("achieve").innerHTML = i18next.t("achieve");
+        document.getElementById("achieve-description").innerHTML = i18next.t(
+          "achieve-description"
+        );
+      }
+
+      function changeLng(lng) {
+        const btn1 = document.querySelectorAll(".btn1");
+        const btn2 = document.querySelectorAll(".btn2");
+        const header = document.querySelector(".header");
+        const fadeElements = document.querySelectorAll(".has-fade");
+        console.log("CLICKED");
+        if (lng === "en") {
+          btn1.forEach((element) => {
+            element.classList.remove("d-n");
+          });
+          btn2.forEach((element) => {
+            element.classList.add("d-n");
+          });
+        } else {
+          btn1.forEach((element) => {
+            element.classList.add("d-n");
+          });
+          btn2.forEach((element) => {
+            element.classList.remove("d-n");
+          });
+        }
+        body.classList.remove("noscroll");
+        header.classList.remove("open");
+        fadeElements.forEach((element) => {
+          element.classList.add("fade-out");
+          element.classList.remove("fade-in");
+        });
+        i18next.changeLanguage(lng);
+      }
+
+      i18next.on("languageChanged", () => {
+        updateContent();
+      });
+    </script>
   </body>
 </html>

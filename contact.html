@@ -35,25 +35,50 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="/">Home</a>
-          <a href="about.html">About</a>
+          <a href="/" id="home">Home</a>
+          <a href="about.html" id="about">About</a>
           <a href="/">Code garrage</a>
         </div>
 
-        <a href="contact.html" class="button header__button hide-for-mobile"
-          >GET IN TOUCH</a
-        >
+        <div class="hide-for-mobile flex flex-ai-c">
+          <a
+            href="contact.html"
+            id="header-button"
+            class="button header__button"
+            >GET IN TOUCH</a
+          >
+          <div style="margin-left: 1rem">
+            <button class="lang-btn btn1" onclick="changeLng('fr')">
+              French
+            </button>
+            <button class="lang-btn btn2 d-n" onclick="changeLng('en')">
+              English
+            </button>
+          </div>
+        </div>
       </nav>
       <div class="header__menu has-fade">
         <a href="/">Home</a>
         <a href="about.html">About</a>
         <a href="/">Code garrage</a>
+        <a href="contact.html">Contact</a>
+        <br />
+        <div>
+          <button class="lang-btn btn1" onclick="changeLng('fr')">
+            French
+          </button>
+          <button class="lang-btn btn2 d-n" onclick="changeLng('en')">
+            English
+          </button>
+        </div>
       </div>
     </header>
     <section class="contact__intro container">
-      <h1>Contact Us</h1>
-      <p>Got an idea but tech is not available? Reach out to us!!</p>
-      <p>
+      <h1 id="contact-heading">Contact Us</h1>
+      <p id="contact-subheading">
+        Got an idea but tech is not available? Reach out to us!!
+      </p>
+      <p id="contact-description">
         At 386Konsult, we give the tech to actualize your idea, giving your hope
         to dreams is one of our core values. Kindly explore our Acceleration and
         Incubation Services
@@ -64,34 +89,34 @@
       <div class="contact__summary">
         <div class="half-width">
           <div class="p-tb">
-            <p>Phone Number</p>
+            <p id="phone-number">Phone Number</p>
             <p>09069703016</p>
           </div>
           <div class="p-tb">
-            <p>Email Address</p>
+            <p id="email-address">Email Address</p>
             <p>Services@386konsult.com</p>
           </div>
           <div class="p-tb">
-            <p>Local Address</p>
+            <p id="address">Local Address</p>
             <p>10 Karimu Wiliams Enclave Sabo Yaba</p>
             <p>Lagos, Nigeria</p>
           </div>
         </div>
         <div class="half-width contact__card">
           <div class="full-input">
-            <label for="name">Name</label>
+            <label for="name" id="label-name">Name</label>
             <input id="name" type="text" />
           </div>
           <div class="full-input">
-            <label for="email">Email Address</label>
+            <label for="email" id="label-email">Email Address</label>
             <input id="email" type="text" />
           </div>
           <div class="full-input">
-            <label for="question">Your question</label>
+            <label for="question" id="label-question">Your question</label>
             <textarea id="question" rows="6"></textarea>
           </div>
           <div>
-            <button class="button">SUBMIT</button>
+            <button class="button" id="submit">SUBMIT</button>
           </div>
         </div>
       </div>
@@ -99,21 +124,22 @@
     <footer class="container flex flex-jc-sb">
       <div>
         <img src="images/logo-white.svg" alt="logo-white" />
-        <p>
+        <p id="footer-description">
           At 386Konsult, We provide world class technology services that help
           business achieve high level performance and accelerated growth.
         </p>
       </div>
       <div>
-        <p>Quick Links</p>
+        <p id="quick-link">Quick Links</p>
         <ul>
-          <li><a href="about.html">About</a></li>
+          <li><a href="/" id="footer-home">Home</a></li>
+          <li><a href="about.html" id="footer-about">About</a></li>
           <li><a href="/">Codegarrage</a></li>
-          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="contact.html" id="contact">Get in touch</a></li>
         </ul>
       </div>
       <div>
-        <p>Follow</p>
+        <p id="follow">Follow</p>
         <ul>
           <li>
             <a
@@ -141,7 +167,7 @@
         </ul>
       </div>
       <div>
-        <p>Contact</p>
+        <p id="contact">Contact</p>
         <ul>
           <li>10 Karimu Wiliams Enclave Sabo Yaba</li>
           <li>Lagos, Nigeria</li>
@@ -151,5 +177,148 @@
       </div>
     </footer>
     <script src="app/js/index.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script type="text/javascript">
+      const en = {
+        "header-button": "GET IN TOUCH",
+        "contact-heading": "CONTACT US",
+        "contact-subheading":
+          "Got an idea but tech is not available? Reach out to us!!",
+        "contact-description":
+          "At 386Konsult, we give the tech to actualize your idea, giving your hope to dreams is one of our core values. Kindly explore our Acceleration and Incubation Services",
+        "footer-description":
+          " At 386Konsult, We provide world class technology services that help business achieve high level performance and accelerated growth.",
+        home: "Home",
+        about: "About",
+        contact: "Contact",
+        follow: "Follow",
+        "quick-link": "Quick Links",
+        "phone-number": "Phone Number",
+        "email-address": "Email Address",
+        address: "Local Address",
+        submit: "SUBMIT",
+        name: "Name",
+        question: "Your question",
+      };
+      const fr = {
+        "header-button": "ENTRER EN CONTACT",
+        "contact-heading": "NOUS CONTACTER",
+        "contact-subheading":
+          "Vous avez une idée mais la technologie n'est pas disponible? Contactez-nous !!",
+        "contact-description":
+          "Chez 386Konsult, nous donnons la technologie pour actualiser votre idée, donner votre espoir aux rêves est l'une de nos valeurs fondamentales. Veuillez explorer nos services d'accélération et d'incubation",
+        "footer-description":
+          "Chez 386Konsult, nous fournissons des services technologiques de classe mondiale qui aident les entreprises à atteindre des performances de haut niveau et une croissance accélérée.",
+        home: "Domicile",
+        about: "À propos de",
+        contact: "Contacter",
+        follow: "Suivre",
+        "quick-link": "Liens rapides",
+        "phone-number": "Numéro de téléphone",
+        "email-address": "Adresse e-mail",
+        address: "Adresse",
+        submit: "NOUS FAIRE PARVENIR",
+        name: "Nom",
+        question: "Ta question",
+      };
+      i18next.init(
+        {
+          lng: "en",
+          debug: true,
+          resources: {
+            en: {
+              translation: {
+                ...en,
+              },
+            },
+            fr: {
+              translation: {
+                ...fr,
+              },
+            },
+          },
+        },
+        function (err, t) {
+          // init set content
+          updateContent();
+        }
+      );
+
+      function updateContent() {
+        document.getElementById("header-button").innerHTML = i18next.t(
+          "header-button"
+        );
+        document.getElementById("contact-heading").innerHTML = i18next.t(
+          "contact-heading"
+        );
+        document.getElementById("contact-subheading").innerHTML = i18next.t(
+          "contact-subheading"
+        );
+        document.getElementById("contact-description").innerHTML = i18next.t(
+          "contact-description"
+        );
+        document.getElementById("footer-description").innerHTML = i18next.t(
+          "footer-description"
+        );
+        document.getElementById("home").innerHTML = i18next.t("home");
+        document.getElementById("footer-home").innerHTML = i18next.t("home");
+        document.getElementById("about").innerHTML = i18next.t("about");
+        document.getElementById("footer-about").innerHTML = i18next.t("about");
+        document.getElementById("contact").innerHTML = i18next.t("contact");
+        document.getElementById("follow").innerHTML = i18next.t("follow");
+        document.getElementById("quick-link").innerHTML = i18next.t(
+          "quick-link"
+        );
+        document.getElementById("phone-number").innerHTML = i18next.t(
+          "phone-number"
+        );
+        document.getElementById("email-address").innerHTML = i18next.t(
+          "email-address"
+        );
+        document.getElementById("address").innerHTML = i18next.t("address");
+        document.getElementById("submit").innerHTML = i18next.t("submit");
+        document.getElementById("label-question").innerHTML = i18next.t(
+          "question"
+        );
+        document.getElementById("label-name").innerHTML = i18next.t("name");
+        document.getElementById("label-email").innerHTML = i18next.t(
+          "email-address"
+        );
+      }
+
+      function changeLng(lng) {
+        const btn1 = document.querySelectorAll(".btn1");
+        const btn2 = document.querySelectorAll(".btn2");
+        const header = document.querySelector(".header");
+        const fadeElements = document.querySelectorAll(".has-fade");
+        console.log("CLICKED");
+        if (lng === "en") {
+          btn1.forEach((element) => {
+            element.classList.remove("d-n");
+          });
+          btn2.forEach((element) => {
+            element.classList.add("d-n");
+          });
+        } else {
+          btn1.forEach((element) => {
+            element.classList.add("d-n");
+          });
+          btn2.forEach((element) => {
+            element.classList.remove("d-n");
+          });
+        }
+        body.classList.remove("noscroll");
+        header.classList.remove("open");
+        fadeElements.forEach((element) => {
+          element.classList.add("fade-out");
+          element.classList.remove("fade-in");
+        });
+        i18next.changeLanguage(lng);
+      }
+
+      i18next.on("languageChanged", () => {
+        updateContent();
+      });
+    </script>
   </body>
 </html>

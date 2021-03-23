@@ -87,7 +87,7 @@ a:hover {
 }
 h1 {
   font-family: $open-sans;
-  font-weight:800;
+  font-weight: 800;
   @include breakpoint-down(medium) {
     font-size: 1.5rem;
     line-height: 2.01rem;
@@ -135,4 +135,14 @@ h3 {
 }
 .image-padding {
   padding: 5rem;
+}
+.lang-btn {
+  display: block;
+  border: 1px solid $primary-color;
+  border-radius: 0.2rem;
+  background-color: $white;
+  margin: 0 auto;
+}
+.d-n {
+  display: none;
 }
